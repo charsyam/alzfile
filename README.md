@@ -5,6 +5,7 @@ extract alz compressed file format
 ALZ FILE HEADER = { 41, 4C, 5A, 01 } 
 
 | ALZ File Header   |
+| --------          |
 | Local File Header |
 | Local File Header |
 | ......            |
@@ -15,6 +16,8 @@ first local file start from position 8
 
 ALZ LOCAL FILE HEADER = { 42, 4C, 5A, 01 }
 
+| Local File Header     |
+| --------------------- |
 | 4 bytes: LOCAL SIG    | 
 | 2 bytes: FILENAME LEN | 
 | 1 byte : unknown      |
